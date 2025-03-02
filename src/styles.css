@@ -17,6 +17,7 @@ body {
   grid-column: 1 / 3;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 25px;
   background-color: rgb(7, 0, 55);
   color: white;
@@ -24,16 +25,18 @@ body {
 
 #content {
   display: flex;
-  justify-content: space-evenly;
   height: 87.5vh;
   width: 100vw;
+  background-color: blanchedalmond;
 }
 
 #player1,
 #player2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50vw;
 }
 
 .gameboard {
@@ -50,5 +53,13 @@ body {
 }
 
 .ship {
+  background-color: gray;
+}
+
+.hit {
+  background-color: red;
+}
+
+.miss {
   background-color: black;
 }

@@ -45,8 +45,10 @@ export function createGameboard() {
 
     if (obj !== null) {
       obj.hit();
+      return true;
     } else {
       misses.push([row, col]);
+      return false;
     }
   };
 
