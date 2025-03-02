@@ -24,4 +24,31 @@ body {
 
 #content {
   display: flex;
+  justify-content: space-evenly;
+  height: 87.5vh;
+  width: 100vw;
+}
+
+#player1,
+#player2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.cell {
+  background-color: white;
+  border: 1px solid black;
+  width: 3.5vw;
+  aspect-ratio: 1;
+}
+
+.ship {
+  background-color: black;
 }
